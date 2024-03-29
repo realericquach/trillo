@@ -282,14 +282,25 @@ body {
   align-items: center; }
   .recommend__count {
     margin-right: auto; }
+  .recommend__friends:hover .recommend__photo:not(:hover) {
+    transform: scale(0.8); }
+  .recommend__photo:hover + .recommend__photo:not(:hover) {
+    transform: scale(1.1); }
   .recommend__photo {
     box-sizing: content-box;
     height: 4rem;
     width: 4rem;
     border-radius: 50%;
-    border: 3px solid #fff; }
+    border: 3px solid #fff;
+    position: relative;
+    transition: all 0.2s; }
     .recommend__photo:not(:last-child) {
       margin-right: -1.5rem; }
+    .recommend__photo:hover {
+      transform: scale(1.2);
+      border: 3px solid var(--color-primary);
+      z-index: 100;
+      box-shadow: var(--shadow-dark); }
 
 .container {
   max-width: 120rem;

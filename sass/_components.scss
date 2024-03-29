@@ -358,7 +358,12 @@
     margin-right: auto;
   }
 
-  &__friends {
+  &__friends:hover &__photo:not(:hover) {
+    transform: scale(0.8);
+  }
+
+  &__photo:hover + &__photo:not(:hover) {
+    transform: scale(1.1);
   }
 
   &__photo {
@@ -367,9 +372,18 @@
     width: 4rem;
     border-radius: 50%;
     border: 3px solid #fff;
+    position: relative;
+    transition: all 0.2s;
 
     &:not(:last-child) {
       margin-right: -1.5rem;
+    }
+
+    &:hover {
+      transform: scale(1.2);
+      border: 3px solid var(--color-primary);
+      z-index: 100;
+      box-shadow: var(--shadow-dark);
     }
   }
 }
