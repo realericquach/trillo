@@ -28,6 +28,18 @@
               <use href="img/sprite.svg#icon-magnifying-glass"></use>
             </svg>
           </button>
+          <div class="search__suggestions">
+            <p class="search__suggestion-item">Los Angeles</p>
+            <p class="search__suggestion-item">New York</p>
+            <p class="search__suggestion-item">Tokyo</p>
+            <p class="search__suggestion-item">Paris</p>
+            <p class="search__suggestion-item">Rome</p>
+            <p class="search__suggestion-item">Seoul</p>
+            <p class="search__suggestion-item">Australia</p>
+            <p class="search__suggestion-item">Toronto</p>
+            <p class="search__suggestion-item">Mexico City</p>
+            <p class="search__suggestion-item">Hawaii</p>
+          </div>
         </form>
 
         <nav class="user-nav">
@@ -37,11 +49,28 @@
             </svg>
             <span class="user-nav__notification">7</span>
           </div>
-          <div class="user-nav__icon-box">
+          <div class="user-nav__icon-box user-nav__message">
             <svg class="user-nav__icon">
               <use href="img/sprite.svg#icon-chat"></use>
             </svg>
             <span class="user-nav__notification">13</span>
+            <div class="user-nav__message-menu">
+              <div class="user-nav__message-menu-item">
+                <img src="img/user-1.jpg" alt="Chat photo 1" class="user-nav__message-menu-photo">
+                <span class="user-nav__message-menu-message">Hey what's up did you....</span>
+                <span class="user-nav__message-menu-timestamp">9:06PM</span>
+              </div>
+              <div class="user-nav__message-menu-item">
+                <img src="img/user-2.jpg" alt="Chat photo 2" class="user-nav__message-menu-photo">
+                <span class="user-nav__message-menu-message">My butt is itchy do you still....</span>
+                <span class="user-nav__message-menu-timestamp">12:06AM</span>
+              </div>
+              <div class="user-nav__message-menu-item">
+                <img src="img/user-3.jpg" alt="Chat photo 3" class="user-nav__message-menu-photo">
+                <span class="user-nav__message-menu-message">My chili tastes funny....</span>
+                <span class="user-nav__message-menu-timestamp">9:06PM</span>
+              </div>
+            </div>
           </div>
           <div class="user-nav__user">
             <img
@@ -50,6 +79,11 @@
               class="user-nav__user-photo"
             />
             <span class="user-nav__user-name">Jonas</span>
+            <div class="user-nav__user-menu">
+              <div class="user-nav__user-menu-item">Settings</div>
+              <div class="user-nav__user-menu-item">Help</div>
+              <div class="user-nav__user-menu-item">Logout</div>
+            </div>
           </div>
         </nav>
       </header>
@@ -102,6 +136,7 @@
                 alt="Photo of hotel 1"
                 class="gallery__photo"
               />
+              <figcaption class="gallery__caption">I like legos</figcaption>
             </figure>
             <figure class="gallery__item">
               <img
@@ -109,6 +144,7 @@
                 alt="Photo of hotel 2"
                 class="gallery__photo"
               />
+              <figcaption class="gallery__caption">I like legos too</figcaption>
             </figure>
             <figure class="gallery__item">
               <img
@@ -116,6 +152,7 @@
                 alt="Photo of hotel 3"
                 class="gallery__photo"
               />
+              <figcaption class="gallery__caption">I like legos three</figcaption>
             </figure>
           </div>
 
